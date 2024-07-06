@@ -29,7 +29,6 @@ Alex Journals App is a comprehensive journals that allows users to create, view,
 
 ### Installation
 
-#### Backend
-1. Clone the repository:
+#### Clone the repository
    ```sh
-   git clone 
+   git clone https://github.com/AlexKaruiru/journal.git
