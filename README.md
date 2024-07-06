@@ -17,7 +17,7 @@ Alex Journals App is a comprehensive journals that allows users to create, view,
 ### Backend
 - **Node.js**
 - **Express**
-- - **MySQL**
+- **MySQL**
 - **Sequelize**
 - **JWT (JSON Web Token)**
 
