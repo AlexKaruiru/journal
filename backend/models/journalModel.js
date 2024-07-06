@@ -5,8 +5,8 @@ import User from './userModel.js';
 
 const sequelize = await connectDB();
 
-const JournalEntry = sequelize.define(
-  'JournalEntry',
+const Journal = sequelize.define(
+  'Journal',
   {
     id: {
       type: DataTypes.BIGINT(20),
@@ -56,6 +56,6 @@ const JournalEntry = sequelize.define(
   }
 );
 
-JournalEntry.sync();
+Journal.sync();
 
-export default JournalEntry;
+export default Journal;

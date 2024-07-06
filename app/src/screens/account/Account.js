@@ -194,7 +194,7 @@ const Account = () => {
               </View>
 
               {loading ? (
-                <ActivityIndicator size="large" color="#195AE6" />
+                <ActivityIndicator size="large" color="#12D18E" />
               ) : (
                 <TouchableOpacity style={styles.btn} onPress={handleUpdate}>
                   <Text style={styles.text}>Save</Text>
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 15,
     marginBottom: 5,
-    color: '#195AE6',
+    color: '#12D18E',
   },
   detailText: {
     fontSize: 15,
@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
   },
   input: {
     borderBottomWidth: 2,
-    borderBottomColor: '#195AE6',
+    borderBottomColor: '#12D18E',
     fontWeight: 'bold',
     fontSize: 15,
     paddingVertical: 5,

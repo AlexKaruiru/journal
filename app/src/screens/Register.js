@@ -150,7 +150,7 @@ const Register = () => {
 
       <View style={styles.bottomContainer}>
           {loading ? (
-            <ActivityIndicator size="large" color="#195AE6" />
+            <ActivityIndicator size="large" color="#12D18E" />
           ) : (
             <TouchableOpacity style={styles.btn} onPress={handleContinue} disabled={loading}>
               <Text style={styles.text}>Continue</Text>
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20, 
-    backgroundColor: "#195AE6",
+    backgroundColor: "#12D18E",
     justifyContent: "center",
     alignItems: "center",
     marginRight: 10,
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
   activeSliderItem: {
-    backgroundColor: "#195AE6",
+    backgroundColor: "#12D18E",
   },
   formContainer: {
     width: "80%",
@@ -227,11 +227,11 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 15,
     marginBottom: 5,
-    color: "#195AE6",
+    color: "#12D18E",
   },
   input: {
     borderBottomWidth: 2,
-    borderBottomColor: "#195AE6",
+    borderBottomColor: "#12D18E",
     fontWeight: "bold",
     fontSize: 15,
     paddingVertical: 5,

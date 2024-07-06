@@ -11,6 +11,7 @@ import Home from './screens/home/Home';
 import MyJournals from './screens/myjournals/MyJournals';
 import Discover from './screens/discover/Discover';
 import Account from './screens/account/Account';
+import GuideScreen from './screens/guide/GuideScreen';
 import Notifications from './screens/notification/Notifications';
 
 import { AuthContext } from './AuthContext';
@@ -46,6 +47,7 @@ const Navigator = () => {
             <Stack.Screen name="MyJournals" component={MyJournals} />
             <Stack.Screen name="Discover" component={Discover} />
             <Stack.Screen name="Account" component={Account} />
+            <Stack.Screen name="Guide" component={GuideScreen} />
             <Stack.Screen name="Notifications" component={Notifications} />
 
 

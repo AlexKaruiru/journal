@@ -12,7 +12,7 @@ const categories = ['Politics', 'Travel', 'Entertainment', 'Health', 'Science', 
 
 const MyJournals = () => {
   const { user } = useContext(AuthContext);
-  const [journalEntries, setJournalEntries] = useState([]);
+  const [journals, setjournals] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [currentEntry, setCurrentEntry] = useState({ title: '', content: '', category: '', date: new Date() });
   const [contentHeight, setContentHeight] = useState(40);  
@@ -21,12 +21,12 @@ const MyJournals = () => {
     try {      
       const userId = user.id;
       const token = user.token;
-      const response = await axios.get(`${backendUrl}/api/journalEntries/myjournals/${userId}`, {
+      const response = await axios.get(`${backendUrl}/api/journals/myjournals/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
-      setJournalEntries(response.data);
+      setjournals(response.data);
     } catch (error) {
       console.error('Error Fetching Journal Entries:', error);
     }
@@ -38,13 +38,13 @@ const MyJournals = () => {
       const entryWithUserId = { ...currentEntry, userId: user.id };
 
       if (currentEntry.id) {
-        await axios.put(`${backendUrl}/api/journalEntries/${currentEntry.id}`, entryWithUserId, {
+        await axios.put(`${backendUrl}/api/journals/${currentEntry.id}`, entryWithUserId, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
       } else {
-        await axios.post(`${backendUrl}/api/journalEntries`, entryWithUserId, {
+        await axios.post(`${backendUrl}/api/journals`, entryWithUserId, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -70,7 +70,7 @@ const MyJournals = () => {
   const handleDelete = async (id) => {
     try {
       const token = user.token;
-      await axios.delete(`${backendUrl}/api/journalEntries/${id}`, {
+      await axios.delete(`${backendUrl}/api/journals/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -112,7 +112,7 @@ const MyJournals = () => {
           <TouchableOpacity style={styles.addButton} onPress={handleAddNew}>
             <Text style={styles.addButtonText}>Add New Entry</Text>
           </TouchableOpacity>
-          {journalEntries.map((entry) => (
+          {journals.map((entry) => (
             <View key={entry.id} style={styles.card}>
               <TouchableOpacity style={styles.cardContent} onPress={() => handleEdit(entry)}>
                 <Text style={styles.cardTitle}>{entry.title}</Text>
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   addButton: {
-    backgroundColor: '#195AE6',
+    backgroundColor: '#12D18E',
     padding: 10,
     borderRadius: 8,
     alignItems: 'center',
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   saveButton: {
-    backgroundColor: '#195AE6',
+    backgroundColor: '#12D18E',
     padding: 10,
     borderRadius: 8,
     alignItems: 'center',

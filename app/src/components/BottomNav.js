@@ -21,10 +21,14 @@ export const renderBottomNav = () => {
         <MaterialIcons name="travel-explore" size={24} color="black" />
         <Text style={styles.iconText}>Discover</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Guide")}>
+        <Ionicons name="help-circle" size={24} color="black" />
+        <Text style={styles.iconText}>Guide</Text>
+      </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Account")}>
         <AntDesign name="profile" size={24} color="black" />
-        <Text style={styles.iconText}>Settings</Text>
-      </TouchableOpacity>
+        <Text style={styles.iconText}>Account</Text>
+      </TouchableOpacity>      
     </View>
   );
 };
@@ -39,8 +43,8 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     marginBottom: 0,
     borderWidth: 2,
-    borderColor: "#195AE6",
-    borderRadius: 0,
+    borderColor: "#12D18E",
+    borderRadius: 10,
     backgroundColor: "#fff",
     elevation: 15,
     paddingHorizontal: 20,

@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20, 
-    backgroundColor: "#195AE6",
+    backgroundColor: "#12D18E",
     justifyContent: "center",
     alignItems: "center",
     marginRight: 10,
@@ -187,11 +187,11 @@ const styles = StyleSheet.create({
     width: 25,
     height: 8,
     borderRadius: 8,
-    backgroundColor: "#195AE6",
+    backgroundColor: "#12D18E",
     marginHorizontal: 5,
   },
   activeSliderItem: {
-    backgroundColor: "#195AE6",
+    backgroundColor: "#12D18E",
   },
   title: {
     fontSize: 32,

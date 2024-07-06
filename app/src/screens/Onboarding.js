@@ -17,15 +17,15 @@ const Onboarding = () => {
     
   return (
     <View style={styles.onboarding}>
-        <Text style={styles.logo}>{`JOURNAL`}</Text>       
+        <Text style={styles.logo}>{`Ideas, `}</Text>       
         <Text style={styles.halisiEats}>
-            <Text style={styles.halisi}>{`WSJ  `}</Text>
-            <Text style={styles.eats}>Today</Text>
+            <Text style={styles.halisi}>{`Stories, `}</Text>
+            <Text style={styles.eats}>Community.</Text>
         </Text>      
       <Image
         style={styles.onboardingIcon}
         contentFit="cover"
-        source={require("../images/onboarding1.gif")}
+        source={require("../images/onboarding.gif")}
       />      
       {/* Signup Button */}
       <TouchableOpacity onPress={handleSignUp} style={styles.groupParent}>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
       fontSize: 30,
     },
     eats: {
-      color: "#195AE6",
+      color: "#12D18E",
     },
     halisiEats: {
       top: 170,

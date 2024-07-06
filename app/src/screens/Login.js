@@ -32,7 +32,6 @@ const Login = () => {
       );
 
       setLoading(false);
-      console.log(response.data);
 
       const userInfo = response.data;
      
@@ -76,7 +75,7 @@ const Login = () => {
           <Text style={styles.title}>
             Welcome Back ...
             <Text marginLeft="2" role="img" aria-label="wave">
-              ☺️
+              🙂
             </Text>
           </Text>
   
@@ -152,7 +151,7 @@ const Login = () => {
       width: 40,
       height: 40,
       borderRadius: 20, 
-      backgroundColor: "#195AE6",
+      backgroundColor: "#12D18E",
       justifyContent: "center",
       alignItems: "center",
       marginRight: 10,
@@ -182,7 +181,7 @@ const Login = () => {
     },
     input: {
       borderBottomWidth: 2,
-      borderBottomColor: "#195AE6",
+      borderBottomColor: "#12D18E",
       fontWeight: "bold",
     },
     passwordContainer: {
@@ -190,7 +189,7 @@ const Login = () => {
       alignItems: "center",
       justifyContent: "space-between",
       borderBottomWidth: 0,
-      borderBottomColor: "#195AE6",
+      borderBottomColor: "#12D18E",
       fontWeight: "bold",
     },
     passwordInput: {
@@ -201,7 +200,7 @@ const Login = () => {
     },
     passwordToggleText: {
       fontSize: 20,
-      color: "#195AE6",
+      color: "#12D18E",
       fontWeight: "bold",
     },
     bottomLinksContainer: {

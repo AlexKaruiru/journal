@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/users', userRoutes);
-app.use('/api/journalEntries', journalRoutes);
+app.use('/api/journals', journalRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

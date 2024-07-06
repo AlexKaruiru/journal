@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#195AE6',
+    color: '#12D18E',
     marginBottom: 16,
   },
   subHeader: {
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
   sectionSubHeader: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#195AE6',
+    color: '#12D18E',
     marginBottom: 12,
     marginTop: 20,
     alignSelf: 'flex-start',
